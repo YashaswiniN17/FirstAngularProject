@@ -1,0 +1,16 @@
+<div class="background-container"><div class="nav">
+    <div class="menu-items">
+        <h3><a routerLink="/home">Home</a></h3>
+        <h3><a routerLink="/GET">Products</a></h3>
+        <h3><a routerLink="/ADD">Add Products</a></h3>
+        <h3><a routerLink="/cart">Cart</a></h3>
+        <h3><a routerLink="/TopSellingProduct">Top Selling Product</a></h3>
+    </div>
+  </div>
+<div class="topSelling">
+<ng-container *ngIf="topSellingProduct">
+   <p>{{topSellingProduct.productName}}</p>
+   <p>Available Quantity: {{topSellingProduct.quantity}}</p>
+</ng-container>
+</div>
+</div>
